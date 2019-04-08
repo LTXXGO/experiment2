@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/third"
+        android:layout_alignStart="@id/third"
+        android:layout_marginBottom="120dp"
+        android:onClick="firstButtonTapped"
+        android:text="第一个Button" />
+
+    <Button
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fourth"
+        android:layout_marginBottom="120dp"
+        android:layout_toRightOf="@id/first"
+        android:onClick="secondButtonTapped"
+        android:text="第二个Button" />
+
+    <Button
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/retur"
+        android:layout_centerVertical="true"
+        android:onClick="thirdButtonTapped"
+        android:text="第三个Button" />
+
+    <Button
+        android:id="@+id/fourth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/third"
+        android:onClick="fourthButtonTapped"
+        android:text="第四个Button" />
+
+    <Button
+        android:id="@+id/retur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="dismiss"
+        android:text="返回" />
+</RelativeLayout>

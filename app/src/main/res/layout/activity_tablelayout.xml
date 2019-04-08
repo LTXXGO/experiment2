@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TableLayout
+        android:layout_height="500dp"
+        android:gravity="center"
+        >
+        <TableRow
+            android:layout_width="match_parent">
+
+            <Button
+                android:layout_width="200dp"
+                android:onClick="firstButtonTapped"
+                android:text="第一个Button" />
+
+            <Button
+                android:layout_width="200dp"
+                android:onClick="secondButtonTapped"
+                android:text="第二个Button" />
+        </TableRow>
+
+        <TableLayout
+            android:layout_marginTop="20dp"
+            >
+            <TableRow
+                android:layout_width="match_parent">
+
+                <Button
+                    android:layout_width="400dp"
+                    android:onClick="thirdButtonTapped"
+                    android:text="第三个Button" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:onClick="fourthButtonTapped"
+                android:text="第四个Button" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:onClick="dismiss"
+            android:text="返回"
+            android:layout_marginBottom="16dp"
+            />
+    </TableLayout>
+
+</TableLayout>
+
+
